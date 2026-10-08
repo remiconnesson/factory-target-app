@@ -1,0 +1,28 @@
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+  html {
+    color-scheme: dark;
+  }
+}
+
+body {
+  margin: 0;
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 48px 16px;
+  line-height: 1.6;
+}

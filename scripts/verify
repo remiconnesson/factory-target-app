@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Definition of done for changes to this app (the software factory's Implement station runs it too).
+set -euo pipefail
+cd "$(dirname "$0")/.."
+pnpm run lint
+pnpm run typecheck
+pnpm run test
